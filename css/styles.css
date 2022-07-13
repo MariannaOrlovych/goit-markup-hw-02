@@ -13,12 +13,13 @@
     --primary-backgraund-color:#FFFFFF;
     --primary-text-color:#757575;
     --button-logo-color:#2196F3;
+    --button-color:#F5F4FA;
 }
 
 body{
     background-color:var(--primary-backgraund-color);
     color: var(--primary-text-color);
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 
 h2,h3,h4,h5,h6{color:var(--title-text-color);}
@@ -69,7 +70,9 @@ font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+}
+
 .contact-nav .link:hover,
 .contact-nav .link:focus{color: var(--button-logo-color);}
 
@@ -81,13 +84,31 @@ font-family: 'Roboto';
 }
 
 /* Кнопка */
-.button{
+
+
+.main-button{
     border-color: var(--button-logo-color);
     color: var(--primary-backgraund-color);
     background-color: var(--button-logo-color);
     font-size: 16px;
     line-height: 30px;
     display: flex;
+}
+
+.button{
+    color: var(--title-text-color);
+    background-color: var(--button-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+.button.current{color:var(--primary-backgraund-color);
+background-color: var(--button-logo-color);
+}
 
 /* секції */
 .section-title{color:var(--title-text-color);}
@@ -99,14 +120,25 @@ font-family: 'Roboto';
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    }
+}
 
-/* колір основного тексту:#212121 */
-/* колір великих букв: #FFFFFF */
-/* колір текту:#757575 */
-/* колір лого:#2196F3 */
+/* картки */
 
-/* колір фону (другий): #2F303A */
+.job{color: var(--primary-text-color);
+}
 
-/* колір кнопки:#2196F3 */
-/* контакти в футері:color: rgba(255, 255, 255, 0.6); */
+/* footer */
+
+.address{background-color:#2F303A;}
+.address-location {color: var(--primary-backgraund-color);}
+.address-location:hover{color: var(--button-logo-color);}
+
+.address-contacts{color: rgba(255, 255, 255, 0.6);
+}
+.address-contacts:hover{color: var(--button-logo-color);}
+
+
+/* portfolio */
+.portfolio-list{}
+.portfolio-img{}
+.portfolio-text{color: var(--primary-text-color);}
