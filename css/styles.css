@@ -1,0 +1,112 @@
+/* колір основного тексту:#212121 */
+/* колір великих букв: #FFFFFF */
+/* колір текту:#757575 */
+/* колір лого:#2196F3 */
+
+/* колір фону (другий): #2F303A */
+
+/* колір кнопки:#2196F3 */
+/* контакти в футері:color: rgba(255, 255, 255, 0.6); */
+
+:root{ 
+    --title-text-color:#212121;
+    --primary-backgraund-color:#FFFFFF;
+    --primary-text-color:#757575;
+    --button-logo-color:#2196F3;
+}
+
+body{
+    background-color:var(--primary-backgraund-color);
+    color: var(--primary-text-color);
+    font-family: Roboto;
+}
+
+h2,h3,h4,h5,h6{color:var(--title-text-color);}
+
+h2{font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;}
+/* забираємо ненумерований список */
+ul {
+    list-style: none;
+}
+
+
+/* оформляємо лого */
+.logo{color: var(--button-logo-color);
+    word-spacing: -0.3em;
+    
+}
+.logo-color{color:#000000}
+.logo,.logo-color{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+list-style: none;}
+
+/* навігація в хедері*/
+.site-nav a {color: var(--title-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;}
+.site-nav .link:hover, 
+.site-nav .link:focus{ color: var(--button-logo-color);}
+
+.site-nav .link.current {color: var(--button-logo-color);}
+
+.contact-nav a {color:var(--primary-text-color);
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;}
+.contact-nav .link:hover,
+.contact-nav .link:focus{color: var(--button-logo-color);}
+
+
+/* hero */
+
+.hero-title{
+    color:var(--primary-backgraund-color);
+}
+
+/* Кнопка */
+.button{
+    border-color: var(--button-logo-color);
+    color: var(--primary-backgraund-color);
+    background-color: var(--button-logo-color);
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+
+/* секції */
+.section-title{color:var(--title-text-color);}
+
+.main-text{color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    }
+
+/* колір основного тексту:#212121 */
+/* колір великих букв: #FFFFFF */
+/* колір текту:#757575 */
+/* колір лого:#2196F3 */
+
+/* колір фону (другий): #2F303A */
+
+/* колір кнопки:#2196F3 */
+/* контакти в футері:color: rgba(255, 255, 255, 0.6); */
