@@ -14,6 +14,7 @@
     --primary-text-color:#757575;
     --button-logo-color:#2196F3;
     --button-color:#F5F4FA;
+    --hero-backgraund-color:#2F303A
 }
 
 body{
@@ -24,12 +25,20 @@ body{
 
 h2,h3,h4,h5,h6{color:var(--title-text-color);}
 
-h2{   font-style: normal;
-    font-weight: 700;
+h2{ font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;}
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+
 /* забираємо ненумерований список */
 ul {
     list-style: none;
@@ -37,45 +46,44 @@ ul {
 
 
 /* оформляємо лого */
-.logo{color: var(--button-logo-color);
+.logo{
+    color: var(--button-logo-color);
     word-spacing: -0.3em;
-    
 }
+
 .logo-color{color:#000000}
+
 .logo,.logo-color{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     list-style: none;
+    text-decoration: none;
 }
-.logo:hover,
-.logo:focus{color: var(--title-text-color);} 
 
-.logo-color:hover,
-.logo .logo-color:focus{color: var(--title-text-color);}
+.logo:hover{color: var(--title-text-color);}
 
 /* навігація в хедері*/
 .site-nav a {color: var(--title-text-color);
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;}
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;}
+
 .site-nav .link:hover, 
 .site-nav .link:focus{ color: var(--button-logo-color);}
 
 .site-nav .link.current {color: var(--button-logo-color);}
 
 .contact-nav a {color:var(--primary-text-color);
-font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .contact-nav .link:hover,
@@ -84,8 +92,15 @@ font-family: 'Roboto';
 
 /* hero */
 
+.hero{background-color: var(--hero-backgraund-color);}
 .hero-title{
     color:var(--primary-backgraund-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* Кнопка */
@@ -96,7 +111,7 @@ font-family: 'Roboto';
     color: var(--primary-backgraund-color);
     background-color: var(--button-logo-color);
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     cursor: pointer;
 }
 
@@ -106,10 +121,10 @@ color: var(--button-logo-color);}
 .button{
     color: var(--title-text-color);
     background-color: var(--button-color);
-    font-style: normal;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.6;
     cursor: pointer;
 }
 
@@ -117,34 +132,36 @@ color: var(--button-logo-color);}
 .button:focus{color: var(--primary-backgraund-color);
 background-color: var(--button-logo-color);}
 
-.button.current{color:var(--primary-backgraund-color);
-background-color: var(--button-logo-color);
-}
+
 
 /* секції */
 .section-title{color:var(--title-text-color);}
 
 .main-text{color: var(--primary-text-color);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
 /* картки */
 
-.job{color: var(--primary-text-color);
+.job{color: var(--primary-text-color)
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;;
 }
 
 /* footer */
 
-.address{background-color:#2F303A;}
-.address-location {color: var(--primary-backgraund-color);}
-.address-location:hover{color: var(--button-logo-color);}
+.address{background-color:var(--hero-backgraund-color);
+text-decoration: none;}
+.address-location {color: var(--primary-backgraund-color);
+    text-decoration: none;}
+.address-location:hover{color: var(--button-logo-color);
+text-decoration: none;}
 
 .address-contacts{color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
 .address-contacts:hover{color: var(--button-logo-color);}
 
