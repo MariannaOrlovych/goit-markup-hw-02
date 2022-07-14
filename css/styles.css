@@ -161,9 +161,10 @@ background-color: var(--button-logo-color);}
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-   }
+ }
 
 .address{font-style: unset;}
+
 .address-location:hover{
     color: var(--button-logo-color);
 }
