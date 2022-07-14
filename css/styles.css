@@ -24,8 +24,7 @@ body{
 
 h2,h3,h4,h5,h6{color:var(--title-text-color);}
 
-h2{font-family: 'Roboto';
-    font-style: normal;
+h2{   font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -49,7 +48,13 @@ ul {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-list-style: none;}
+    list-style: none;
+}
+.logo:hover,
+.logo:focus{color: var(--title-text-color);} 
+
+.logo-color:hover,
+.logo .logo-color:focus{color: var(--title-text-color);}
 
 /* навігація в хедері*/
 .site-nav a {color: var(--title-text-color);
@@ -92,19 +97,25 @@ font-family: 'Roboto';
     background-color: var(--button-logo-color);
     font-size: 16px;
     line-height: 30px;
-    display: flex;
+    cursor: pointer;
 }
+
+.main-button:hover, .main-button:focus {background-color: var(--button-color) ;
+color: var(--button-logo-color);}
 
 .button{
     color: var(--title-text-color);
     background-color: var(--button-color);
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+    cursor: pointer;
 }
 
+.button:hover, 
+.button:focus{color: var(--primary-backgraund-color);
+background-color: var(--button-logo-color);}
 
 .button.current{color:var(--primary-backgraund-color);
 background-color: var(--button-logo-color);
