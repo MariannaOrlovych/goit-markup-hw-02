@@ -14,7 +14,8 @@
     --primary-text-color:#757575;
     --button-logo-color:#2196F3;
     --button-color:#F5F4FA;
-    --hero-backgraund-color:#2F303A
+    --hero-backgraund-color:#2F303A;
+    --logo-color:#000000;
 }
 
 body{
@@ -51,7 +52,7 @@ ul {
     word-spacing: -0.3em;
 }
 
-.logo-color{color:#000000}
+.logo-color{color:#000000;}
 
 .logo,.logo-color{
     font-family: 'Raleway';
@@ -110,6 +111,7 @@ ul {
     border-color: var(--button-logo-color);
     color: var(--primary-backgraund-color);
     background-color: var(--button-logo-color);
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.87;
     cursor: pointer;
@@ -145,7 +147,7 @@ background-color: var(--button-logo-color);}
 
 /* картки */
 
-.job{color: var(--primary-text-color)
+.job{color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;;
@@ -155,18 +157,41 @@ background-color: var(--button-logo-color);}
 
 .address{background-color:var(--hero-backgraund-color);
 text-decoration: none;}
-.address-location {color: var(--primary-backgraund-color);
-    text-decoration: none;}
-.address-location:hover{color: var(--button-logo-color);
-text-decoration: none;}
-
-.address-contacts{color: rgba(255, 255, 255, 0.6);
+.address-location {
+    color: var(--primary-backgraund-color);
     text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+       letter-spacing: 0.03em;
+    }
+
+.address-location:hover{
+    color: var(--button-logo-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em}
+
+.address-contacts{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
+
 .address-contacts:hover{color: var(--button-logo-color);}
 
 
 /* portfolio */
-.portfolio-list{}
-.portfolio-img{}
-.portfolio-text{color: var(--primary-text-color);}
+.portfolio-names{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text{color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;}
