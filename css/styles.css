@@ -64,6 +64,12 @@ ul {
     text-decoration: none;
 }
 
+.logo-color-footer{color: var(--primary-backgraund-color);
+    font-family: 'Raleway';
+        font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;}
 /* навігація в хедері*/
 .site-nav a {color: var(--title-text-color);
     font-weight: 500;
